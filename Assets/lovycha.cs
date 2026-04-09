@@ -12,13 +12,20 @@ public class lovycha : MonoBehaviour
 
 {
     
-    
+    public InfoPlayer
+            infoPlayer;
 
     
     private void OnTriggerEnter(Collider other)
  {
     if (other.gameObject.CompareTag("Player")){
-    SceneManager.LoadScene("LevelTst");
+      int value = 25;
+      infoPlayer.HP -- value;
+      if(infoPlayer.HP == 0)
+         {
+            SceneManager.LoadScene("LevelTst");
+         }
+    
     }
     
     
