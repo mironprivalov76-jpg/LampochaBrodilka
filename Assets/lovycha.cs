@@ -1,36 +1,32 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
-public class lovycha : MonoBehaviour
-
-
-
-
-
+public class Healt : MonoBehaviour
 {
     
-    public InfoPlayer
-            infoPlayer;
+    [SerializeField] Text healttext;
+    int xp =5;
+     
 
-    
     private void OnTriggerEnter(Collider other)
- {
-    if (other.gameObject.CompareTag("Player")){
-      int value = 25;
-      infoPlayer.HP -- value;
-      if(infoPlayer.HP == 0)
-         {
-            SceneManager.LoadScene("LevelTst");
-         }
-    
-    }
-    
-    
+    {
+        if (CompareTag("Player"))
+        {
+            xp --;
+             healttext.text = "xp :  " + xp;
+             print(xp);
+             if(xp == 0)
+            {
+                SceneManager.LoadScene("LevelTst");
+            }
 
- }
+            
+        }
+
+       
+
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -44,3 +40,5 @@ public class lovycha : MonoBehaviour
         
     }
 }
+    
+     
