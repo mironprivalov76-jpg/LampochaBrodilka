@@ -6,11 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/menu.unity
+    guid: 8824a3653d1c1ea439eb115b77ca02b4
+  - enabled: 1
     path: Assets/Scenes/LevelTst.unity
     guid: a3f29f1950f6e5945a274cf7349d68b2
   - enabled: 1
-    path: Assets/Scenes/DungeonLiteScene-FPS.unity
-    guid: 5039c5e96a91a07498cb1a3fff40f497
+    path: Assets/Scenes/menu 1.unity
+    guid: 7a462e41a73e8fe4296c781b6d1f1e72
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

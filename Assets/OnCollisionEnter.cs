@@ -17,10 +17,13 @@ public class OnCollisionEnter : MonoBehaviour
  {
    
     ochi ++;
-    ochitext.text = "собрано :  " + ochi;
-     SceneManager.LoadScene("DungeonLiteScene-FPS");
+    ochitext.text = "цель собрать 1 монеток собрано :" + ochi ;
+    if(ochi == 1)
+    {
+     SceneManager.LoadScene("menu 1");
     print(ochi);
     Destroy(gameObject);
+    }
     
 
  }
